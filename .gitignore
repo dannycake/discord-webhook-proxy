@@ -1,0 +1,9 @@
+.env
+*.sqlite
+
+.idea/
+*.iml
+.DS_STORE
+
+node_modules/
+dist/
