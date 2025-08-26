@@ -9,7 +9,6 @@ const API_KEY = process.env.API_KEY!;
 const app = new Elysia({
   prefix: '/api',
 })
-  .use(helmet())
   .use(
     swagger({
       documentation: {
@@ -20,6 +19,7 @@ const app = new Elysia({
       },
     })
   )
+  .use(helmet())
   .get(
     '/stats',
     ({}) => {
